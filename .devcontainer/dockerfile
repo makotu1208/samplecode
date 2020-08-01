@@ -9,18 +9,18 @@ RUN apt-get update && apt-get install -y \
     unzip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-    
+
 RUN pip3 install \
     keras \
     jupyter \
-    jupyterlab 
+    jupyterlab
 
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 RUN pip3 install jupyter_contrib_nbextensions
 
-# if you wants to copy folder, use this 
-COPY sample_code/ /root/sample_code/
+# if you wants to copy folder, use this
+# COPY sample_code/ /root/sample_code/
 
 EXPOSE 8888
 
