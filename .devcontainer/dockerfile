@@ -19,6 +19,9 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 RUN pip3 install jupyter_contrib_nbextensions
 
+# pytorch
+RUN pip install torch==1.6.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+
 # if you wants to copy folder, use this
 # COPY sample_code/ /root/sample_code/
 
