@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # img_file
-.jpg
-.png
-.jpeg
-.gif
+*.jpg
+*.png
+*.jpeg
+*.gif
