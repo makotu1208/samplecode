@@ -6,6 +6,9 @@
 	// Sets the run context to one level up instead of the .devcontainer folder.
 	"context": "..",
 
+	// set a memory
+	"build": { "args": { "memory": "3G"}},
+
 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 	"dockerFile": "dockerfile",
 
